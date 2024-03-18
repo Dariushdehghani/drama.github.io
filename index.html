@@ -7,7 +7,13 @@
     <body>
         <h1>hello world</h1>
         <script>
-            console.log(window.Telegram.WebApp)
+            if (window.Telegram.WebApp.sccolorScheme === 'light') {
+                let root = document.querySelector(':root')
+                root.setAttribute('text-accent-color', 'black')
+            } else {
+                let root = document.querySelector(':root')
+                root.setAttribute('text-accent-color', 'white')
+            }
         </script>
     </body>
 </html>
