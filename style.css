@@ -1,7 +1,7 @@
 :root {
-  text-accent-color: black;
+  --text-accent-color: black;
 }
 
 *{
-  color: var(text-accent-color);
+  color: var(--text-accent-color);
 }
