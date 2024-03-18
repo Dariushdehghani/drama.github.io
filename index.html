@@ -8,9 +8,11 @@
         <h1>hello world</h1>
         <script>
             if (window.Telegram.WebApp.colorScheme === 'light') {
+                console.log('light')
                 let root = document.querySelector(':root')
                 root.setAttribute('text-accent-color', 'black')
             } else {
+                console.log('dark')
                 let root = document.querySelector(':root')
                 root.setAttribute('text-accent-color', 'white')
             }
