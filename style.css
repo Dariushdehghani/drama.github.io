@@ -2,6 +2,6 @@
   --text-accent-color: black;
 }
 
-*{
-  color: var(--text-accent-color);
+h1{
+  color: white;
 }
