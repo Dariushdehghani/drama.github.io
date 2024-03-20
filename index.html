@@ -8,7 +8,7 @@
     <body>
         <h1>hello <P id='user_name'></P></h1>
         <script>
-            document.getElementById('user_name').innerHTML = window.Telegram.WebApp.initData
+            document.getElementById('user_name').innerHTML = window.Telegram.WebApp.initDataUnsafe.user.first_name
             if (window.Telegram.WebApp.sccolorScheme === 'light') {
                 let root = document.querySelector(':root')
                 root.style.setProperty('text-accent-color', 'black')
