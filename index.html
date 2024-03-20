@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>hello world</h1>
+        <h1>hello <P id='user_name'></P></h1>
         <script>
+            document.getElementById('user_name').innerHTML = window.Telegram.WebApp.initData
             if (window.Telegram.WebApp.sccolorScheme === 'light') {
                 let root = document.querySelector(':root')
                 root.style.setProperty('text-accent-color', 'black')
